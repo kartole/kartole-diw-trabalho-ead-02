@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>  
+  
+</head>
+<form action='servidor.php' method="GET">
+ <p>
+  <label for="nome">Nome Completo:</label>
+  <input type="text" placeholder="Nome Completo" name="nome" id="nome" required>
+  
+ </p>
+ <p>
+  <label for="email">E-mail:</label> 
+  <input type="email" placeholder="email@email.com" name="email" id="email" required>
+ </p>
+ <p>
+   Sexo:
+   <input type="radio" name="sexo" id="masculino" value="Masculino">
+   <label for="masculino">Masculino</label>
+   <input type="radio" name="sexo" id="feminino" value="Feminino">
+   <label for="feminino">Feminino</label><br>
+ </p>
+ <p>
+    Data de Nascimento: <input type="date" name="data" id="data" required>
+ </p>
+ <p>
+   Grau de Escolaridade: 
+   <select name="escolaridade" size="1">
+    <option value="medio">Ensino Médio</option>
+    <option value="superior" selected="true">Superior Completo</option>
+    <option value="pos">Pós-graduação</option>
+    <option value="mestrado">Mestrado</option>
+    <option value="doutorado">Doutorado</option>
+   </select>
+ </p>
+ <p>
+Estilos Musicais Preferidos:
+<select name="musicas" size="1">
+  <option value="Rock" selected="true">Rock</option>
+  <option value="Funk">Funk</option>
+  <option value="Samba">Samba</option>
+  <option value="Pagode">Pagode</option>
+  <option value="Pop">Pop</option>
+</select>
+ </p>
+<p>
+ <label for="usuario">Nome de Usuário:</label>
+<input type="text" name="usuario" id="usuario" placeholder="Usuário" required>
+</p>
+<p>
+  <label for="senha">Senha:</label>
+  <input type="password" name="senha" id="senha" placeholder="********" required>
+</p>
+<p>
+  <label for="cor">Cor Preferida:</label>
+  <input type="color" name="cor" id="cor">
+</p>
+<p>
+  Quantidade de Filhos: <input type="number" name="numero" id="num" value="0" required>
+</p>
+<p>
+  Quantidade de Veículos: 0<input type="range" name="veiculos" id="veiculo" min="0" max="5" step="1" value="0">5
+</p>
+<label for="coment">Deixe seu comentário:</label><br><textarea cols="50" rows="20" name="coment" id="coment"></textarea>
+<br><br>
+<input type="submit" value="Voltar">
+<input type="submit" value="Enviar">
+
+</form>
+</html>
